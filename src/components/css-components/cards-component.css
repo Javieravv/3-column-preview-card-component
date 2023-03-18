@@ -1,0 +1,38 @@
+.cards-cars {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+}
+
+.cards-cars div:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cards-cars div:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .cards-cars {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards-cars div:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    
+    .cards-cars div:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+}
+
